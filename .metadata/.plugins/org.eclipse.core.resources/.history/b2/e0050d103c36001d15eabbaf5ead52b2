@@ -1,0 +1,5 @@
+package com.desafiotecnicoqred.api.repository;
+
+public interface SmoothieRepository {
+
+}

@@ -1,0 +1,5 @@
+package com.desafiotecnicoqred.api.models;
+
+public class Smoothie {
+
+}
