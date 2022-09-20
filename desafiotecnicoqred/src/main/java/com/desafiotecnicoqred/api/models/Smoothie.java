@@ -10,14 +10,19 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+
 @Entity
 @Table(name="smoothie")
+
 public class Smoothie implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@JsonIgnore
 	private long id;
 	
 	@NotNull
@@ -41,6 +46,9 @@ public class Smoothie implements Serializable{
 	
 	@Size(max = 50)
 	private String ingrediente6;
+
+	
+
 
 	public long getId() {
 		return id;

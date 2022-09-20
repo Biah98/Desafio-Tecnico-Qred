@@ -1,0 +1,14 @@
+package com.desafiotecnicoqred.api.json;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class SerializeTest {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

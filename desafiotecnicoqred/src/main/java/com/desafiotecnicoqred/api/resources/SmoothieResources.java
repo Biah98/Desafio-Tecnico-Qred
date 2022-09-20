@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,9 +27,19 @@ public class SmoothieResources {
 		return ResponseEntity.ok(smoothieRepository.findAll());
 	}
 	
-	
-	@GetMapping("/nome/{nome}")
-	public ResponseEntity <Smoothie> getByNome(@PathVariable String nome){ 
-		return ResponseEntity.ok(smoothieRepository.findAllByNomeContainingIgnoreCase(nome));
+	/* 
+	@GetMapping("/smoothies/{id}")
+	public Smoothie smoothieId(@PathVariable (value="id")long id){
+		return smoothieRepository.findById(id);
 	}
-}
+	 */
+	
+	
+	@GetMapping("/smoothies/{nome}")
+	public Smoothie smoothieNome(@PathVariable (value="nome")String nome){
+		return smoothieRepository.findAllByNomeContainingIgnoreCase(nome);
+	}
+}	
+
+		
+

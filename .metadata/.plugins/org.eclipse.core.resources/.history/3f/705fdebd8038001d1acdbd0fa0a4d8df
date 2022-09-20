@@ -1,0 +1,7 @@
+package com.desafiotecnicoqred.api.serialization;
+
+import com.fasterxml.jackson.databind.JsonSerializer;
+
+public class CostunSmoothiesSerializer  extends JsonSerializer<Smoothies>{
+
+}

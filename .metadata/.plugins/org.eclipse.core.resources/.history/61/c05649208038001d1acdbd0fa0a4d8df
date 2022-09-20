@@ -1,0 +1,5 @@
+package com.desafiotecnicoqred.api.serialization;
+
+public class CostunSmoothiesSerializer {
+
+}
