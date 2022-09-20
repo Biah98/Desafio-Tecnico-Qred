@@ -1,0 +1,13 @@
+package com.desafiotecnicoqred.api.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.desafiotecnicoqred.api.models.Smoothie;
+
+public interface SmoothieRepository extends JpaRepository<Smoothie, Long>{
+	
+	public Smoothie findAllByNomeContainingIgnoreCase(String nome);
+
+}

@@ -1,0 +1,9 @@
+package com.desafiotecnicoqred.api.json;
+
+import com.fasterxml.jackson.databind.JsonSerializer;
+
+public public static class Serialize extends JsonSerializer{
+
+	
+
+}

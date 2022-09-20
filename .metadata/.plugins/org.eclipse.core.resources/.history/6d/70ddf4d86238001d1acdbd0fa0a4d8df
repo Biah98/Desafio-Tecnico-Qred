@@ -1,0 +1,5 @@
+package com.desafiotecnicoqred.api.json;
+
+public class Serialize {
+
+}
